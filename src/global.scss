@@ -5,10 +5,24 @@
 }
 
 body {
+  color: #adb5bd;
   background: #1f2431;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   margin: 0 auto;
   max-width: 90%;
+  padding: 0 25px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  color: #adb5bd;
+  text-decoration: none;
 }
