@@ -1,6 +1,6 @@
-import cls from "./Header.module.scss"
-import { useRef, useState, useEffect } from "react"
-import { accountMenuItems } from '../../data.js'
+import cls from './TopBar.module.scss'
+import { useRef, useState, useEffect } from 'react'
+import { accountMenuItems } from '../../../data.js'
 
 const Account = () => {
     const ref = useRef(null);

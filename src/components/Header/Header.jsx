@@ -1,11 +1,12 @@
-import cls from './Header.module.scss'
-import TopBar from "./TopBar.jsx"
+import TopBar from './TopBar/TopBar.jsx'
+import FirstSection from './FirstSection.jsx'
 
 const Header = () => {
 
     return (
         <header>
             <TopBar />
+            <FirstSection />
         </header>
     )
 }

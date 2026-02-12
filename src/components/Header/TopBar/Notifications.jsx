@@ -1,5 +1,5 @@
-import cls from './Header.module.scss'
-import { notifications } from '../../data.js'
+import cls from './TopBar.module.scss'
+import { notifications } from '../../../data.js'
 import { useRef, useState, useEffect } from 'react'
 
 const Notifications = () => {

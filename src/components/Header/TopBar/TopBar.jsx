@@ -1,8 +1,8 @@
-import cls from "./Header.module.scss"
-import Locales from "./Locales.jsx"
-import Notifications from "./Notifications.jsx"
-import Search from "./Search.jsx"
-import Account from "./Account.jsx"
+import cls from './TopBar.module.scss'
+import Locales from './Locales.jsx'
+import Notifications from './Notifications.jsx'
+import Search from './Search.jsx'
+import Account from './Account.jsx'
 
 const TopBar = () => {
     const handleFullScreen = () => {
