@@ -1,0 +1,63 @@
+.charts {
+  gap: 24px;
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  .donut_chart {
+    padding: 20px;
+    height: 455px;
+    width: 100%;
+    background: #293142;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .info {
+      display: flex;
+      margin: 24px 0 16px;
+      justify-content: space-between;
+
+      div {
+        gap: 8px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        padding: 0 1.5rem;
+        flex-direction: column;
+
+        h5 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        span {
+          color: #adb5bdbf;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .chart {
+      width: 260px;
+      align-self: center;
+
+      :global(.c3-chart-arcs-title) {
+        font-size: 18px;
+        fill: #adb5bd;
+        font-weight: 600;
+      }
+
+      :global(.c3-legend-item) {
+        fill: #adb5bd;
+        font-size: 14px;
+      }
+    }
+  }
+}

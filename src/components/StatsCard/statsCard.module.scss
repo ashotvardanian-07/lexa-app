@@ -1,0 +1,75 @@
+.stats {
+  gap: 24px;
+  display: grid;
+  margin-top: 55px;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media(max-width: 1199px) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+
+  .stats_card {
+    width: 100%;
+    display: flex;
+    padding: 1.25rem;
+    border-radius: .25rem;
+    background-size: cover;
+    background-color: #796fbe;
+    justify-content: space-between;
+    background-image: url("../../assets/statscard-bg.png");
+
+    .content {
+      color: #fff;
+
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+
+      .value {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .change_info {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 10px;
+          padding: 2px 4px;
+          border-radius: .25rem;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      background: #ffffff1a;
+      justify-content: center;
+
+      i {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+}

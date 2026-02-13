@@ -167,3 +167,48 @@ export const navMenuItems = [
         ]
     }
 ]
+
+export const statsItems = [
+    {
+        id: 1,
+        title: "Orders",
+        value: "1,587",
+        icon: "fas fa-cube",
+        change: "+11%",
+        changeType: "up",
+        from: "From previous period"
+    },
+    {
+        id: 2,
+        title: "Revenue",
+        value: "$46,782",
+        icon: "fas fa-coins",
+        change: "-29%",
+        changeType: "down",
+        from: "From previous period"
+    },
+    {
+        id: 3,
+        title: "Average Price",
+        value: "$15.9",
+        icon: "fas fa-tag",
+        change: "0%",
+        changeType: "neutral",
+        from: "From previous period"
+    },
+    {
+        id: 4,
+        title: "Product Sold",
+        value: "$15.9",
+        icon: "fas fa-check-square",
+        change: "+89%",
+        changeType: "up",
+        from: "From previous period"
+    }
+]
+
+export const earningsDonutChartData = [
+    { name: "Download Sales", value: 19.4, fill: "#f0f1f4" },
+    { name: "In-Store Sales", value: 48.4, fill: "#796fbe" },
+    { name: "Mail-Order Sales", value: 32.3, fill: "#29bbe3" },
+];
