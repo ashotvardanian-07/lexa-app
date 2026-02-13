@@ -1,4 +1,4 @@
-import cls from './TopBar.module.scss'
+import cls from './topBar.module.scss'
 import { useRef, useState, useEffect } from 'react'
 import { accountMenuItems } from '../../../data.js'
 
@@ -23,7 +23,7 @@ const Account = () => {
         <div ref={ref} className={cls.account}>
             <div
                 className={cls.account_btn}
-                onClick={() => setDropOpen(!dropOpen)}
+                onClick={() => setDropOpen(prev => !prev)}
             >
                 <img
                     width={36}

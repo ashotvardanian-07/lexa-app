@@ -1,4 +1,4 @@
-import cls from './TopBar.module.scss'
+import cls from './topBar.module.scss'
 import { notifications } from '../../../data.js'
 import { useRef, useState, useEffect } from 'react'
 
@@ -23,7 +23,7 @@ const Notifications = () => {
         <div ref={ref} className={cls.notifications}>
             <div
                 className={cls.label}
-                onClick={() => setDropOpen(!dropOpen)}
+                onClick={() => setDropOpen(prev => !prev)}
             >
                 <i className="far fa-bell"></i>
                 <span className={cls.indicator}>{notifications.length}</span>

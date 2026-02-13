@@ -1,4 +1,4 @@
-import cls from './TopBar.module.scss'
+import cls from './topBar.module.scss'
 
 const Search = () => {
     return (

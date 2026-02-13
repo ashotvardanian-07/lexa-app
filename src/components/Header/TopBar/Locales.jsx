@@ -1,4 +1,4 @@
-import cls from './TopBar.module.scss'
+import cls from './topBar.module.scss'
 import { locales } from '../../../data.js'
 import { useRef, useState, useEffect } from 'react'
 
@@ -25,7 +25,7 @@ const Locales = () => {
         <div ref={ref} className={cls.locales}>
             <div
                 className={cls.current_locale}
-                onClick={() => setDropOpen(!dropOpen)}
+                onClick={() => setDropOpen(prev => !prev)}
             >
                 <img
                     height={16}

@@ -1,4 +1,4 @@
-import cls from './TopBar.module.scss'
+import cls from './topBar.module.scss'
 import Locales from './Locales.jsx'
 import Notifications from './Notifications.jsx'
 import Search from './Search.jsx'

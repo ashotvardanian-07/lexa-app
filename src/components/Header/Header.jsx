@@ -1,12 +1,12 @@
 import TopBar from './TopBar/TopBar.jsx'
-import FirstSection from './FirstSection.jsx'
+import MainHeader from './MainHeader.jsx'
 
 const Header = () => {
 
     return (
         <header>
             <TopBar />
-            <FirstSection />
+            <MainHeader />
         </header>
     )
 }

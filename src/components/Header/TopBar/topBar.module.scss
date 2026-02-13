@@ -111,8 +111,8 @@
           position: absolute;
           background: #293142;
           flex-direction: column;
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
           animation: dropdownSlide .3s ease;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
           .locale {
             gap: 4px;

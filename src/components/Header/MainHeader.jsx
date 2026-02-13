@@ -1,9 +1,10 @@
-import cls from './Header.module.scss'
+import cls from './header.module.scss'
 import GraphSvg from '../../assets/svg/state-graph.svg?react'
+import NavMenu from "./NavigationMenu/NavMenu.jsx";
 
-const FirstSection = () => {
+const MainHeader = () => {
     return (
-        <div className={cls.first_section}>
+        <div className={cls.main_header}>
             <div className={`${cls.row} container`}>
                 <div>
                     <h4 className={cls.page_title}>Dashboard</h4>
@@ -26,8 +27,9 @@ const FirstSection = () => {
                     </div>
                 </div>
             </div>
+            <NavMenu />
         </div>
     )
 }
 
-export default FirstSection
+export default MainHeader
