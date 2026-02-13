@@ -41,7 +41,7 @@ const EarningsDonutChart = () => {
     }, []);
 
     return (
-        <div className={cls.donut_chart}>
+        <div className={cls.each_chart}>
             <h2 className={cls.title}>Monthly Earnings</h2>
             <div className={cls.info}>
                 <div>
