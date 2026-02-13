@@ -1,8 +1,9 @@
 .charts {
   gap: 24px;
+  width: 100%;
   display: grid;
   margin-top: 24px;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: calc(25% - 17px) calc(50% - 14px) calc(25% - 17px);
 
   .each_chart {
     padding: 20px;
@@ -61,7 +62,7 @@
     }
   }
 
-  :global(.apexcharts-yaxis-texts-g tspan), :global(.apexcharts-xaxis-texts-g tspan) {
-    fill: #adb5bd;
-  }
+  //:global(.apexcharts-yaxis-texts-g tspan), :global(.apexcharts-xaxis-texts-g tspan) {
+  //  fill: #adb5bd;
+  //}
 }

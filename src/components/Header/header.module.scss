@@ -1,7 +1,13 @@
 header {
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+
   .main_header {
     height: 136px;
     background: #293142;
+    box-shadow: 0 -3px 31px 0 #0000000d, 0 6px 20px 0 #00000005;
 
     .row {
       padding: 20px;

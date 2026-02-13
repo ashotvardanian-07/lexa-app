@@ -4,11 +4,11 @@ import StatsCardItem from "./StatsCardItem.jsx";
 
 const StatsCard = () => {
     return (
-        <div className={`${cls.stats} container`}>
+        <section className={`${cls.stats} container`}>
             {statsItems.length > 0 && statsItems.map(item => (
                 <StatsCardItem key={item.id} item={item} />
             ))}
-        </div>
+        </section>
     )
 }
 

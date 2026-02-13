@@ -211,4 +211,4 @@ export const earningsDonutChartData = [
     { name: "Download Sales", value: 19.4, fill: "#f0f1f4" },
     { name: "In-Store Sales", value: 48.4, fill: "#796fbe" },
     { name: "Mail-Order Sales", value: 32.3, fill: "#29bbe3" },
-];
+]

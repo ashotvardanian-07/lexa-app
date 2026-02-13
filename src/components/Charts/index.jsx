@@ -1,13 +1,15 @@
 import EarningsDonutChart from './EarningsDonutChart.jsx'
 import cls from './charts.module.scss'
 import LineChart from "./LineChart.jsx";
+import BarChart from "./BarChart.jsx";
 
 const Charts = () => {
     return (
-        <div className={`${cls.charts} container`}>
+        <section className={`${cls.charts} container`}>
             <EarningsDonutChart />
             <LineChart />
-        </div>
+            <BarChart />
+        </section>
     )
 }
 

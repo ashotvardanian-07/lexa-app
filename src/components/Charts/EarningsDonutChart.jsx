@@ -45,11 +45,11 @@ const EarningsDonutChart = () => {
             <h2 className={cls.title}>Monthly Earnings</h2>
             <div className={cls.info}>
                 <div>
-                    <h5>$56241</h5>
+                    <h5>$ 56241</h5>
                     <span>Marketplace</span>
                 </div>
                 <div>
-                    <h5>$23651</h5>
+                    <h5>$ 23651</h5>
                     <span>Total Income</span>
                 </div>
             </div>

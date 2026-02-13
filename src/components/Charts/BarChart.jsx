@@ -1,45 +1,43 @@
 import Chart from "react-apexcharts";
 import cls from "./charts.module.scss";
 
-const PyramidChart = () => {
+const BarChart = () => {
     const series = [
         {
             name: "Series A",
-            data: [0, 150, 60, 180, 90, 75, 30],
+            data: [45, 75, 100, 75, 100, 75, 50, 75, 50, 75, 100, 80]
         },
         {
             name: "Series B",
-            data: [0, 45, 150, 36, 60, 240, 30],
-        },
-        {
-            name: "Series C",
-            data: [0, 15, 195, 21, 360, 120, 30],
+            data: [180, 65, 90, 65, 90, 65, 40, 65, 40, 65, 90, 65]
         }
     ]
 
     const options = {
         chart: {
-            type: "area",
+            type: "bar",
             height: 300,
-            stacked: false,
+            stacked: true,
             toolbar: { show: false },
         },
         stroke: {
-            show: false
+            width: 2,
         },
         fill: {
             type: "fill",
-            opacity: 0.3,
-            colors: ["#796fbe", "#bdbdbd", "#29bbe3"],
+            opacity: 1,
         },
         markers: {
             size: 0,
             hover: {
-                size: 5,
+                size: 8,
             },
+            colors: ["#f0f1f4", "#29bbe3"],
+            strokeWidth: 0,
         },
+        colors: ["#29bbe3", "#f0f1f4"],
         xaxis: {
-            categories: [2011, 2012, 2013, 2014, 2015, 2016, 2017],
+            categories: [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
             axisTicks: {
                 show: false
             },
@@ -47,7 +45,7 @@ const PyramidChart = () => {
         },
         yaxis: {
             min: 0,
-            max: 360,
+            max: 240,
             tickAmount: 4,
             labels: { style: { colors: '#adb5bd' }}
         },
@@ -57,29 +55,25 @@ const PyramidChart = () => {
 
     return (
         <div className={cls.each_chart}>
-            <h2 className={cls.title}>Email Sent</h2>
+            <h2 className={cls.title}>Monthly Earnings</h2>
             <div className={cls.info}>
                 <div>
-                    <h5>$ 89425</h5>
+                    <h5>$ 2548</h5>
                     <span>Marketplace</span>
                 </div>
                 <div>
-                    <h5>$ 56210</h5>
+                    <h5>$ 6985</h5>
                     <span>Total Income</span>
-                </div>
-                <div>
-                    <h5>$ 8974</h5>
-                    <span>Last Month</span>
                 </div>
             </div>
             <Chart
-                type="area"
+                type="bar"
                 height={300}
                 series={series}
                 options={options}
             />
         </div>
     )
-};
+}
 
-export default PyramidChart;
+export default BarChart
