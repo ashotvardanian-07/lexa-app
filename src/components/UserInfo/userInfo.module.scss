@@ -1,0 +1,248 @@
+.user_info {
+  gap: 24px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block {
+  padding: 20px;
+  margin-top: 24px;
+  background: #293142;
+  border-radius: .25rem;
+
+  .title {
+    color: #adb5bd;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user {
+    gap: 16px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: flex-start;
+    border-bottom: 1px solid #3a445b;
+
+    .avatar img {
+      border-radius: 50%;
+    }
+
+    .message_block {
+      .name {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .message {
+        color: #adb5bd;
+        font-size: 13px;
+      }
+    }
+
+    .time {
+      font-size: 11px;
+      margin-left: auto;
+    }
+  }
+}
+
+.activity_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .activite_feed {
+    width: 100%;
+    padding: 15px 15px 0;
+    list-style-type: none;
+
+    .feed_item:not(:last-child) {
+      border-left: 2px solid #3a445b;
+    }
+
+    .feed_item {
+      width: 100%;
+      position: relative;
+      padding: 0 0 30px 30px;
+
+      .feed_body {
+        height: 63px;
+        display: flex;
+        padding: 12px 20px;
+        background: #30384b;
+        border-radius: 7px;
+        flex-direction: column;
+
+        .date {
+          color: #8c96a3;
+          font-size: 13px;
+          text-transform: uppercase;
+        }
+
+        .content {
+          color: #adb5bd;
+          font-size: 13px;
+        }
+
+        &::after {
+          top: 0;
+          left: 19px;
+          content: "";
+          position: absolute;
+          border-left: 10px solid #0000;
+          border-top: 10px solid #30384b;
+          border-bottom: 10px solid #0000;
+          border-right: 10px solid #30384b;
+        }
+      }
+
+      &::after {
+        top: 0;
+        left: -9px;
+        width: 8px;
+        content: "";
+        height: 1.5px;
+        display: block;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        border: 4px solid #7a6fbe;
+      }
+    }
+  }
+
+  .load_more {
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    background: #7a6fbe;
+    border-radius: .25rem;
+  }
+}
+
+.widget_block {
+  gap: 24px;
+  padding: 0;
+  display: flex;
+  background: unset;
+  flex-direction: column;
+
+  .first_widget {
+    .message_block {
+      padding: 24px;
+      position: relative;
+      background: #796fbe;
+      border-radius: .25rem .25rem 0 0;
+
+      .message {
+        gap: 8px;
+        color: #fff;
+        display: flex;
+        font-size: 13px;
+        line-height: 1.7;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+
+        i {
+          color: #bdb8df;
+          font-size: 32px;
+        }
+      }
+
+      &::after {
+        left: 18px;
+        content: "";
+        bottom: -20px;
+        position: absolute;
+        border-left: 10px solid #0000;
+        border-top: 10px solid #7a6fbe;
+        border-bottom: 10px solid #0000;
+        border-right: 10px solid #7a6fbe;
+      }
+    }
+
+    .specialist {
+      gap: 24px;
+      padding: 24px;
+      display: flex;
+      background: #293142;
+      align-items: center;
+      border-radius: 0 0 .25rem .25rem;
+
+      .avatar img {
+        margin-top: 8px;
+        border-radius: 50%;
+      }
+
+      .user_info {
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .position {
+          color: #adb5bd;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .second_widget {
+    margin-top: unset;
+
+    .sales_block {
+      gap: 24px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      .sales_info {
+        h3 {
+          color: #fff;
+          font-size: 23px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 13px;
+          margin-bottom: 16px;
+        }
+
+        a, i {
+          color: #7a6fbe;
+          font-size: 13px;
+        }
+
+        i {
+          font-size: 10px;
+          margin-left: 6px;
+        }
+      }
+
+      .mini_chart {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+

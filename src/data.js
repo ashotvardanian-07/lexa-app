@@ -212,3 +212,71 @@ export const earningsDonutChartData = [
     { name: "In-Store Sales", value: 48.4, fill: "#796fbe" },
     { name: "Mail-Order Sales", value: 32.3, fill: "#29bbe3" },
 ]
+
+export const inboxData = [
+    {
+        id: 1,
+        name: "Misty",
+        message: "Hey! there I'm available...",
+        time: "13:40 PM",
+        avatar: "/src/assets/user.png"
+    },
+    {
+        id: 2,
+        name: "Melissa",
+        message: "I've finished it! See you so...",
+        time: "13:34 PM",
+        avatar: "/src/assets/inboxUsers/user2.png"
+    },
+    {
+        id: 3,
+        name: "Dwayne",
+        message: "This theme is awesome!",
+        time: "13:17 PM",
+        avatar: "/src/assets/inboxUsers/user3.png"
+    },
+    {
+        id: 4,
+        name: "Martin",
+        message: "Nice to meet you",
+        time: "12:20 PM",
+        avatar: "/src/assets/inboxUsers/user4.png"
+    },
+    {
+        id: 5,
+        name: "Vincent",
+        message: "Hey! there I'm available...",
+        time: "11:47 PM",
+        avatar: "/src/assets/inboxUsers/user5.png"
+    },
+    {
+        id: 6,
+        name: "Robert Chappa",
+        message: "Hey! there I'm available...",
+        time: "10:12 PM",
+        avatar: "/src/assets/inboxUsers/user6.png"
+    }
+]
+
+export const userActivities = [
+    {
+        id: 1,
+        date: "Jun 25",
+        content: 'Responded to need “Volunteer Activities”',
+    },
+    {
+        id: 2,
+        date: "Jun 24",
+        content: 'Added an interest “Volunteer Activities”',
+    },
+    {
+        id: 3,
+        date: "Jun 23",
+        content: 'Joined the group “Boardsmanship Forum”',
+    },
+    {
+        id: 4,
+        date: "Jun 21",
+        content: 'Responded to need “In-Kind Opportunity”',
+    },
+]

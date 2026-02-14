@@ -29,7 +29,7 @@ const Account = () => {
                     width={36}
                     height={36}
                     alt="user avatar"
-                    className={cls.user_avatar}
+                    className={cls.avatar}
                     src="/src/assets/user.png"
                 />
             </div>
