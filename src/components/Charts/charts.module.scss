@@ -5,9 +5,13 @@
   margin-top: 24px;
   grid-template-columns: calc(25% - 17px) calc(50% - 14px) calc(25% - 17px);
 
+  @media(max-width: 1199px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
   .each_chart {
     padding: 20px;
-    height: 455px;
     width: 100%;
     background: #293142;
     border-radius: .25rem;

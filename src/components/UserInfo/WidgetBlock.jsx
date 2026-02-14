@@ -71,7 +71,7 @@ const WidgetBlock = () => {
                         <Chart
                             type="bar"
                             height={120}
-                            width={250}
+                            width={"100%"}
                             series={miniBarSeries}
                             options={miniBarOptions}
                         />
