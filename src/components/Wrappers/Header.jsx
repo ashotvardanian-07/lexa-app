@@ -1,4 +1,4 @@
-import cls from './header.module.scss'
+import cls from './wrappers.module.scss'
 import TopBar from './TopBar/TopBar.jsx'
 import NavMenu from './NavigationMenu/NavMenu.jsx'
 import GraphSvg from '../../assets/svg/state-graph.svg?react'

@@ -1,7 +1,8 @@
-import Header from './Header/Header.jsx'
+import Header from './Wrappers/Header.jsx'
 import { useState, useEffect } from 'react'
 import { MobileContext } from '../context/MobileContext'
-import MobileMenu from './Header/MobileMenu/MobileMenu.jsx'
+import MobileMenu from './Wrappers/MobileMenu/MobileMenu.jsx'
+import Footer from './Wrappers/Footer.jsx'
 
 const MainLayout = ({ children }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ const MainLayout = ({ children }) => {
                 mobileMenuOpen={mobileMenuOpen}
             />}
             { children }
+            <Footer />
         </MobileContext.Provider>
     )
 }

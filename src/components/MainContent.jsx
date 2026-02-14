@@ -1,6 +1,7 @@
 import Charts from './Charts/index.jsx'
 import UserInfo from './UserInfo/index.jsx'
 import StatsCard from './StatsCard/StatsCard.jsx'
+import LatestInfo from "./LatestInfo/index.jsx";
 
 const MainContent = () => {
     return (
@@ -8,6 +9,7 @@ const MainContent = () => {
             <StatsCard />
             <Charts />
             <UserInfo />
+            <LatestInfo />
         </main>
     )
 }

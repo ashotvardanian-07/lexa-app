@@ -280,3 +280,103 @@ export const userActivities = [
         content: 'Responded to need “In-Kind Opportunity”',
     },
 ]
+
+export const latestTransactions = [
+    {
+        id: 1,
+        name: "Herbert C. Patton",
+        status: "confirm",
+        amount: "$14,584",
+        date: "5/12/2016",
+        avatar: "/src/assets/inboxUsers/user2.png"
+    },
+    {
+        id: 2,
+        name: "Mathias N. Klausen",
+        status: "pending",
+        amount: "$8,541",
+        date: "10/11/2016",
+        avatar: "/src/assets/inboxUsers/user3.png"
+    },
+    {
+        id: 3,
+        name: "Nikolaj S. Henriksen",
+        status: "confirm",
+        amount: "$954",
+        date: "8/11/2016",
+        avatar: "/src/assets/inboxUsers/user4.png"
+    },
+    {
+        id: 4,
+        name: "Lasse C. Overgaard",
+        status: "expired",
+        amount: "$44,584",
+        date: "7/11/2016",
+        avatar: "/src/assets/inboxUsers/user5.png"
+    },
+    {
+        id: 5,
+        name: "Kasper S. Jessen",
+        status: "confirm",
+        amount: "$8,844",
+        date: "1/11/2016",
+        avatar: "/src/assets/inboxUsers/user6.png"
+    }
+]
+
+export const latestOrders = [
+    {
+        id: 1,
+        orderId: "#12354781",
+        name: "Riverston Glass Chair",
+        status: "delivered",
+        amount: "$185",
+        date: "5/12/2016",
+        avatar: "/src/assets/user.png"
+    },
+    {
+        id: 2,
+        orderId: "#52140300",
+        name: "Shine Company Catalina",
+        status: "delivered",
+        amount: "$1,024",
+        date: "10/11/2016",
+        avatar: "/src/assets/inboxUsers/user2.png"
+    },
+    {
+        id: 3,
+        orderId: "#96254137",
+        name: "Trex Outdoor Furniture Cape",
+        status: "canceled",
+        amount: "$657",
+        date: "8/11/2016",
+        avatar: "/src/assets/inboxUsers/user3.png"
+    },
+    {
+        id: 4,
+        orderId: "#12365474",
+        name: "Oasis Bathroom Teak Corner",
+        status: "shipped",
+        amount: "$8451",
+        date: "7/11/2016",
+        avatar: "/src/assets/inboxUsers/user4.png"
+    },
+    {
+        id: 5,
+        orderId: "#85214796",
+        name: "BeoPlay Speaker",
+        status: "delivered",
+        amount: "$584",
+        date: "1/11/2016",
+        avatar: "/src/assets/inboxUsers/user5.png"
+    },
+    {
+        id: 6,
+        orderId: "#12354781",
+        name: "Riverston Glass Chair",
+        status: "delivered",
+        amount: "$185",
+        date: "5/12/2016",
+        avatar: "/src/assets/inboxUsers/user6.png"
+    },
+]

@@ -1,0 +1,93 @@
+.latest_info {
+  gap: 24px;
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.block {
+  width: 100%;
+  padding: 20px;
+  overflow-x: auto;
+  background: #293142;
+  border-radius: .25rem;
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .transactions_table, .orders_table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+
+    tbody {
+      tr {
+        td {
+          padding: 14px;
+          border-bottom: 1px solid #3a445b;
+        }
+
+        .user > .user_block {
+          gap: 8px;
+          display: flex;
+          font-size: 13px;
+          align-items: center;
+
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .payment_status {
+          .status_block {
+            gap: 4px;
+            display: flex;
+            font-size: 13px;
+            white-space: nowrap;
+            align-items: center;
+
+            span {
+              width: 10px;
+              height: 10px;
+              display: block;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .order_status {
+          .status_block {
+            color: #fff;
+            font-size: 10px;
+            padding: 2px;
+            text-align: center;
+            border-radius: 30px;
+          }
+        }
+
+        .amount, .date > div {
+          font-size: 14px;
+          text-align: start;
+
+          p {
+            font-size: 13px;
+          }
+        }
+
+        .edit_btn > button {
+          color: #fff;
+          font-size: 11px;
+          padding: 6px 10px;
+          background: #6c757d;
+          border-radius: .25rem;
+        }
+      }
+    }
+  }
+}
