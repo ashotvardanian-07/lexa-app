@@ -1,6 +1,6 @@
 import cls from './navMenu.module.scss'
-import { navMenuItems } from '../../../data.js'
 import NavMenuItem from './NavMenuItem.jsx'
+import { navMenuItems } from '../../../data.js'
 
 const NavMenu = () => {
 

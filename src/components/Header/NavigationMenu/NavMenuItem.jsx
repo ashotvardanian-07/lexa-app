@@ -1,13 +1,15 @@
 import cls from './navMenu.module.scss'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { MobileContext } from '../../../context/MobileContext.js'
 
 const NavMenuItem = ({ menu, level }) => {
-    const [open, setOpen] = useState(false)
+    const isMobile = useContext(MobileContext)
     const hasChildren = menu.children.length > 0
+    const [open, setOpen] = useState(false)
     const columns = menu.children.length < 10 ? 1 : menu.children.length > 15 ? 3 : 2;
 
     const handleMenuClick = (e) => {
-        if (level === 0) {
+        if (isMobile || level === 0) {
             e.preventDefault();
             e.stopPropagation();
             setOpen(prev => !prev);

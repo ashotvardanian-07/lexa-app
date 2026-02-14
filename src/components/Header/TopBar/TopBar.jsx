@@ -1,16 +1,16 @@
 import cls from './topBar.module.scss'
 import Locales from './Locales.jsx'
-import Notifications from './Notifications.jsx'
 import Search from './Search.jsx'
 import Account from './Account.jsx'
+import Notifications from './Notifications.jsx'
 
-const TopBar = () => {
+const TopBar = ({ setMobileMenuOpen }) => {
     const handleFullScreen = () => {
         if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
+            document.documentElement.requestFullscreen()
         } else {
             if (document.exitFullscreen) {
-                document.exitFullscreen();
+                document.exitFullscreen()
             }
         }
     }
@@ -18,8 +18,15 @@ const TopBar = () => {
     return (
         <div className={cls.topbar}>
             <div className={`${cls.row} container`}>
-                <span className={cls.logo_block}>
-                    <img src="/src/assets/logo.png" alt="logo" height={19}/>
+                <span className={cls.float_left}>
+                    <img className={cls.desktop_logo} src="/src/assets/logo.png" alt="logo" height={19}/>
+                    <img className={cls.mobile_logo} src="/src/assets/mobile_logo.png" alt="logo" height={22}/>
+                    <button
+                        className={cls.mobile_menu_toggle}
+                        onClick={() => setMobileMenuOpen(prev => !prev)}
+                    >
+                        <i className="fa fa-bars"></i>
+                    </button>
                 </span>
                 <div className={cls.toolbar}>
                     <Search/>
@@ -30,8 +37,8 @@ const TopBar = () => {
                     >
                         <i className="fas fa-expand"></i>
                     </button>
-                    <Notifications/>
-                    <Account/>
+                    <Notifications />
+                    <Account />
                     <button className={cls.settings_btn}>
                         <i className="fa fa-cog fa-spin"></i>
                     </button>

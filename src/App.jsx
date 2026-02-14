@@ -1,12 +1,13 @@
-import Header from './components/Header/Header.jsx'
-import MainContent from "./components/MainContent.jsx";
+import MainLayout from './components/MainLayout.jsx'
+import MainContent from './components/MainContent.jsx'
 
 function App() {
   return (
-    <>
-      <Header />
-      <MainContent />
-    </>
+      <div className="App">
+          <MainLayout>
+              <MainContent />
+          </MainLayout>
+      </div>
   )
 }
 

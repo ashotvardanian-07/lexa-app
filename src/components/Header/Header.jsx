@@ -1,12 +1,12 @@
-import TopBar from './TopBar/TopBar.jsx'
 import cls from './header.module.scss'
-import GraphSvg from '../../assets/svg/state-graph.svg?react'
+import TopBar from './TopBar/TopBar.jsx'
 import NavMenu from './NavigationMenu/NavMenu.jsx'
+import GraphSvg from '../../assets/svg/state-graph.svg?react'
 
-const Header = () => {
+const Header = ({ setMobileMenuOpen }) => {
     return (
         <header>
-            <TopBar />
+            <TopBar setMobileMenuOpen={setMobileMenuOpen} />
             <div className={cls.main_header}>
                 <div className={`${cls.row} container`}>
                     <div>
@@ -30,7 +30,9 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <NavMenu/>
+                <div className={cls.navbar_container}>
+                    <NavMenu/>
+                </div>
             </div>
         </header>
     )
