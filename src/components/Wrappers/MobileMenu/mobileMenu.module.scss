@@ -7,6 +7,7 @@
     display: flex;
     overflow: auto;
     position: fixed;
+    max-height: 400px;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .2s ease-in-out;
@@ -14,6 +15,7 @@
     :global(._navbar_kp2zm_11) {
       width: 100%;
       padding: 0;
+      height: 100%;
 
       :global(._navbar_container_kp2zm_14) {
         height: 100%;
