@@ -1,33 +1,46 @@
+import us from "../src/assets/flags/us.png"
+import ru from "../src/assets/flags/ru.png"
+import de from "../src/assets/flags/de.png"
+import it from "../src/assets/flags/it.png"
+import es from "../src/assets/flags/es.png"
+
+import userImg from "../src/assets/user.png"
+import user2Img from "../src/assets/inboxUsers/user2.png"
+import user3Img from "../src/assets/inboxUsers/user3.png"
+import user4Img from "../src/assets/inboxUsers/user4.png"
+import user5Img from "../src/assets/inboxUsers/user5.png"
+import user6Img from "../src/assets/inboxUsers/user6.png"
+
 export const locales = [
     {
         id: 1,
         code: 'en',
         name: 'English',
-        img: '/src/assets/flags/us.png'
+        img: us
     },
     {
         id: 2,
         code: 'ru',
         name: 'Russian',
-        img: '/src/assets/flags/ru.png'
+        img: ru
     },
     {
         id: 3,
         code: 'de',
         name: 'German',
-        img: '/src/assets/flags/de.png'
+        img: de
     },
     {
         id: 4,
         code: 'it',
         name: 'Italian',
-        img: '/src/assets/flags/it.png'
+        img: it
     },
     {
         id: 5,
         code: 'es',
         name: 'Spanish',
-        img: '/src/assets/flags/es.png'
+        img: es
     },
 ]
 
@@ -219,42 +232,42 @@ export const inboxData = [
         name: "Misty",
         message: "Hey! there I'm available...",
         time: "13:40 PM",
-        avatar: "/src/assets/user.png"
+        avatar: userImg
     },
     {
         id: 2,
         name: "Melissa",
         message: "I've finished it! See you so...",
         time: "13:34 PM",
-        avatar: "/src/assets/inboxUsers/user2.png"
+        avatar: user2Img
     },
     {
         id: 3,
         name: "Dwayne",
         message: "This theme is awesome!",
         time: "13:17 PM",
-        avatar: "/src/assets/inboxUsers/user3.png"
+        avatar: user3Img
     },
     {
         id: 4,
         name: "Martin",
         message: "Nice to meet you",
         time: "12:20 PM",
-        avatar: "/src/assets/inboxUsers/user4.png"
+        avatar: user4Img
     },
     {
         id: 5,
         name: "Vincent",
         message: "Hey! there I'm available...",
         time: "11:47 PM",
-        avatar: "/src/assets/inboxUsers/user5.png"
+        avatar: user5Img
     },
     {
         id: 6,
         name: "Robert Chappa",
         message: "Hey! there I'm available...",
         time: "10:12 PM",
-        avatar: "/src/assets/inboxUsers/user6.png"
+        avatar: user6Img
     }
 ]
 
@@ -288,7 +301,7 @@ export const latestTransactions = [
         status: "confirm",
         amount: "$14,584",
         date: "5/12/2016",
-        avatar: "/src/assets/inboxUsers/user2.png"
+        avatar: user2Img
     },
     {
         id: 2,
@@ -296,7 +309,7 @@ export const latestTransactions = [
         status: "pending",
         amount: "$8,541",
         date: "10/11/2016",
-        avatar: "/src/assets/inboxUsers/user3.png"
+        avatar: user3Img
     },
     {
         id: 3,
@@ -304,7 +317,7 @@ export const latestTransactions = [
         status: "confirm",
         amount: "$954",
         date: "8/11/2016",
-        avatar: "/src/assets/inboxUsers/user4.png"
+        avatar: user4Img
     },
     {
         id: 4,
@@ -312,7 +325,7 @@ export const latestTransactions = [
         status: "expired",
         amount: "$44,584",
         date: "7/11/2016",
-        avatar: "/src/assets/inboxUsers/user5.png"
+        avatar: user5Img
     },
     {
         id: 5,
@@ -320,7 +333,7 @@ export const latestTransactions = [
         status: "confirm",
         amount: "$8,844",
         date: "1/11/2016",
-        avatar: "/src/assets/inboxUsers/user6.png"
+        avatar: user6Img
     }
 ]
 
@@ -332,7 +345,7 @@ export const latestOrders = [
         status: "delivered",
         amount: "$185",
         date: "5/12/2016",
-        avatar: "/src/assets/user.png"
+        avatar: userImg
     },
     {
         id: 2,
@@ -341,7 +354,7 @@ export const latestOrders = [
         status: "delivered",
         amount: "$1,024",
         date: "10/11/2016",
-        avatar: "/src/assets/inboxUsers/user2.png"
+        avatar: user2Img
     },
     {
         id: 3,
@@ -350,7 +363,7 @@ export const latestOrders = [
         status: "canceled",
         amount: "$657",
         date: "8/11/2016",
-        avatar: "/src/assets/inboxUsers/user3.png"
+        avatar: user3Img
     },
     {
         id: 4,
@@ -359,7 +372,7 @@ export const latestOrders = [
         status: "shipped",
         amount: "$8451",
         date: "7/11/2016",
-        avatar: "/src/assets/inboxUsers/user4.png"
+        avatar: user4Img
     },
     {
         id: 5,
@@ -368,7 +381,7 @@ export const latestOrders = [
         status: "delivered",
         amount: "$584",
         date: "1/11/2016",
-        avatar: "/src/assets/inboxUsers/user5.png"
+        avatar: user5Img
     },
     {
         id: 6,
@@ -377,6 +390,6 @@ export const latestOrders = [
         status: "delivered",
         amount: "$185",
         date: "5/12/2016",
-        avatar: "/src/assets/inboxUsers/user6.png"
+        avatar: user6Img
     },
 ]

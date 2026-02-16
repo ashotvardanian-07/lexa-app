@@ -1,6 +1,7 @@
 import cls from './topBar.module.scss'
 import { useRef, useState, useEffect } from 'react'
 import { accountMenuItems } from '../../../data.js'
+import userImg from '../../../assets/user.png'
 
 const Account = () => {
     const ref = useRef(null);
@@ -30,7 +31,7 @@ const Account = () => {
                     height={36}
                     alt="user avatar"
                     className={cls.avatar}
-                    src="/src/assets/user.png"
+                    src={userImg}
                 />
             </div>
             <div ref={ref} className={`${cls.account_menus} ${dropOpen ? cls.drop_open : ''}`}>
