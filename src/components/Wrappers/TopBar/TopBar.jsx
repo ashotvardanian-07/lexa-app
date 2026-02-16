@@ -3,6 +3,8 @@ import Locales from './Locales.jsx'
 import Search from './Search.jsx'
 import Account from './Account.jsx'
 import Notifications from './Notifications.jsx'
+import logo from '../../../assets/logo.png'
+import mobileLogo from '../../../assets/mobile_logo.png'
 
 const TopBar = ({ setMobileMenuOpen }) => {
     const handleFullScreen = () => {
@@ -19,8 +21,8 @@ const TopBar = ({ setMobileMenuOpen }) => {
         <div className={cls.topbar}>
             <div className={`${cls.row} container`}>
                 <span className={cls.float_left}>
-                    <img className={cls.desktop_logo} src="/src/assets/logo.png" alt="logo" height={19}/>
-                    <img className={cls.mobile_logo} src="/src/assets/mobile_logo.png" alt="logo" height={22}/>
+                    <img className={cls.desktop_logo} src={logo} alt="logo" height={19}/>
+                    <img className={cls.mobile_logo} src={mobileLogo} alt="logo" height={22}/>
                     <button
                         className={cls.mobile_menu_toggle}
                         onClick={() => setMobileMenuOpen(prev => !prev)}
