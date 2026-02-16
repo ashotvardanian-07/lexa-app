@@ -1,4 +1,4 @@
-import cls from './StatsCard.module.scss'
+import cls from './statsCard.module.scss'
 
 const StatsCardItem = ({ item }) => {
     const { title, value, icon, change, changeType, from } = item

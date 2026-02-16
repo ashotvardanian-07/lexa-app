@@ -1,5 +1,5 @@
 import { statsItems } from '../../data.js'
-import cls from './StatsCard.module.scss'
+import cls from './statsCard.module.scss'
 import StatsCardItem from "./StatsCardItem.jsx";
 
 const StatsCard = () => {
